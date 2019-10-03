@@ -16,9 +16,9 @@
   background:#6CADDC;
 }
 .card > .img-container > img {
-  width: 135%;
+  width: 145%;
   height: 250px;
-  margin-left: -35px;
+  margin-left: -55px;
 }
 
 /* .card > .remove {
