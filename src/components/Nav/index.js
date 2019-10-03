@@ -5,9 +5,10 @@ function Nav(props) {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
-        O Captain, My Captain Memory Game
+        <strong>O Captain, My Captain Memory Game</strong>
       </a>
-      <p>Score: {props.current} || Top Score: {props.top}</p>
+      <div className="score">
+        <p>Score: {props.current}</p><p>Top Score: {props.top}</p></div>
     </nav>
   );
 }

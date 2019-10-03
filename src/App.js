@@ -26,10 +26,10 @@ class App extends Component {
 
   // this.setState({})
   render() {
-    const shuffledPosts = shuffleArray(this.state.captains);
+    const shuffledPics = shuffleArray(this.state.captains);
     const handleClick = (id) => {
       console.log(id);
-
+      this.shuffledPics(captains);
     }
 
     return (
@@ -39,7 +39,7 @@ class App extends Component {
           top={this.state.topScore}
         />
         <Wrapper>
-          {shuffledPosts.map(captains => (
+          {shuffledPics.map(captains => (
             <Card
               onClick={handleClick}
               id={captains.id}

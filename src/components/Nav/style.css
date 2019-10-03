@@ -1,3 +1,19 @@
 nav.navbar {
   margin-bottom: 0;
 }
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+.score {
+  font-size: 40px;
+  color: white;
+  border: solid 1px white;
+}
+
+p {
+  float: left;
+  padding: 2px 20px 2px 20px;
+  margin-bottom: 5px;
+}
