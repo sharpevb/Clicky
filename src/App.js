@@ -5,6 +5,8 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import captains from "./captains.json";
 
+
+
 function shuffleArray(array) {
   let i = array.length - 1;
   for (; i > 0; i--) {
@@ -23,14 +25,20 @@ class App extends Component {
     captains
   };
 
+  componentDidMount() {
+  }
 
-  // this.setState({})
+  // 
   render() {
     const shuffledPics = shuffleArray(this.state.captains);
     const handleClick = (id) => {
-      console.log(id);
-      this.shuffledPics(captains);
+      this.setState({
+        currentScore: this.state.currentScore +1
+      })
+      
+      console.log(id); 
     }
+
 
     return (
       <div className="App">
