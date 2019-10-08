@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Captain-Game/static/css/main.a6225ce7.chunk.css",
-    "main.js": "/Captain-Game/static/js/main.53c641ff.chunk.js",
-    "main.js.map": "/Captain-Game/static/js/main.53c641ff.chunk.js.map",
-    "runtime-main.js": "/Captain-Game/static/js/runtime-main.109bf36b.js",
-    "runtime-main.js.map": "/Captain-Game/static/js/runtime-main.109bf36b.js.map",
-    "static/js/2.20c44714.chunk.js": "/Captain-Game/static/js/2.20c44714.chunk.js",
-    "static/js/2.20c44714.chunk.js.map": "/Captain-Game/static/js/2.20c44714.chunk.js.map",
+    "main.js": "/Captain-Game/static/js/main.cc421738.chunk.js",
+    "main.js.map": "/Captain-Game/static/js/main.cc421738.chunk.js.map",
+    "runtime-main.js": "/Captain-Game/static/js/runtime-main.06f15889.js",
+    "runtime-main.js.map": "/Captain-Game/static/js/runtime-main.06f15889.js.map",
+    "static/js/2.91b2e5ae.chunk.js": "/Captain-Game/static/js/2.91b2e5ae.chunk.js",
+    "static/js/2.91b2e5ae.chunk.js.map": "/Captain-Game/static/js/2.91b2e5ae.chunk.js.map",
     "index.html": "/Captain-Game/index.html",
-    "precache-manifest.a9de2fa373ab71b21728402e3daddd70.js": "/Captain-Game/precache-manifest.a9de2fa373ab71b21728402e3daddd70.js",
+    "precache-manifest.1ba4f636ec51c381dc7cc0c492db4df2.js": "/Captain-Game/precache-manifest.1ba4f636ec51c381dc7cc0c492db4df2.js",
     "service-worker.js": "/Captain-Game/service-worker.js",
     "static/css/main.a6225ce7.chunk.css.map": "/Captain-Game/static/css/main.a6225ce7.chunk.css.map",
     "static/media/style.css": "/Captain-Game/static/media/space.58f5a1f2.jpg"

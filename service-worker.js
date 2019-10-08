@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Captain-Game/precache-manifest.a9de2fa373ab71b21728402e3daddd70.js"
+  "/Captain-Game/precache-manifest.1ba4f636ec51c381dc7cc0c492db4df2.js"
 );
 
 self.addEventListener('message', (event) => {
