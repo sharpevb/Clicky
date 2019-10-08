@@ -5,22 +5,9 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import captains from "./captains.json";
 
-
-
-function shuffleArray(array) {
-  let i = array.length - 1;
-  for (; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return array;
-}
-
 class App extends Component {
   state = {
-    currentScore: 0,
+    score: 0,
     topScore: 0,
     captains
   };
@@ -28,28 +15,53 @@ class App extends Component {
   componentDidMount() {
   }
 
-  // 
-  render() {
-    const shuffledPics = shuffleArray(this.state.captains);
-    const handleClick = (id) => {
-      this.setState({
-        currentScore: this.state.currentScore +1
-      })
-      
-      console.log(id); 
+  gameOver = () => {
+    if (this.state.score > this.state.topScore) {
+      this.setState({topScore: this.state.score}, function() {
+        console.log(this.state.topScore);
+      });
     }
+    this.state.captains.forEach(card => {
+      card.count = 0;
+    });
+    this.setState({score: 0});
+    return true;
+  }
 
+  clickCount = id => {
+    this.state.captains.find((o, i) => {
+      if (o.id === id) {
+        if(captains[i].count === 0){
+          captains[i].count = captains[i].count + 1;
+          this.setState({score : this.state.score + 1}, function(){
+            if (this.state.score >= 8) {
+              alert("You won!" + "\nWould you like to play again?");
+              this.setState({score: 0});
+              this.setState({topScore: 0});
+              return true
+            }
+            console.log(this.state.score);
+          });
+          this.state.captains.sort(() => Math.random() - 0.5)
+          return true; 
+        } else {
+          this.gameOver();
+        }
+      }
+    });
+  }
 
+  render() {
     return (
       <div className="App">
         <Nav
-          current={this.state.currentScore}
+          current={this.state.score}
           top={this.state.topScore}
         />
         <Wrapper>
-          {shuffledPics.map(captains => (
+          {this.state.captains.map(captains => (
             <Card
-              onClick={handleClick}
+              onClick={this.clickCount}
               id={captains.id}
               key={captains.id}
               image={captains.image}
@@ -63,6 +75,5 @@ class App extends Component {
 
 
 }
-
 
 export default App;
